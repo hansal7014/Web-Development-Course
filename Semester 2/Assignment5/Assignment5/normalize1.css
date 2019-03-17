@@ -1,0 +1,78 @@
+/*setting the backgroung colour for the <body>*/
+body{
+	background-color: #ddd;
+	
+}
+/*selecting the <main> element and setting its height, width, padding, margins, border and center aligning text*/
+main{
+	width: 700px;
+	margin:10px auto;
+	border: 1px solid black;
+	text-align: center;
+	padding: 0px 20px;
+	height: 380px;
+			
+ }
+ /* selecting the <header> and <footer> elements and setting the height, width, backgroung colour, padding, text colour, text alignment and border */
+ header, footer{
+	width: 1200px;
+	background-color: blanchedalmond;
+	padding:2px 25px;
+	color: rebeccapurple;
+	border: 1px solid black;
+	border-radius: 6px;
+	text-align: center;
+	height: 70px;
+}
+/*selecting the logo and setting its size, margins and position inside the header.*/
+#logo{
+	width: 75px;
+	height: auto;
+	float: left;
+	margin: 5px;	
+	
+}
+/* positioning the <footer> element at the bottom*/
+footer{
+	bottom:0; 
+}
+/*selecting the <nav> element and setting the position, margins, padding, background colour and border*/
+nav{
+	margin: 20px;
+	float: left;
+	padding:8px;
+	background-color: cornflowerblue;
+	border: 1px solid black;
+}		
+
+/*selecting all <a> tags nested within the <nav> tag and setting the font size, colour, padding and converting text to uppercase*/
+nav a{
+	font-size:14px;
+	color: #000;
+	padding:2px 5px;	
+	text-transform: uppercase;
+}
+/*selecting all the <section> tags and  setting the border, position, height, width, margins and aligning text*/
+section{
+	border: 1px solid black;
+	float: right;
+	height: 300px;
+	width: 200px;
+	margin:10px;
+	text-align: center;
+	
+}
+/*box sizing all the <input> and <select> tags*/
+input, select {
+	box-sizing: border-box;
+ }
+		 
+		
+		 
+		
+		
+		
+		
+	
+		
+		

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!-- HTML HEAD --> 
+
+<head>
+   <meta charset="UTF-8" />
+   <script src="registration.js"></script>
+   <link rel="stylesheet" type="text/css" href="normalize1.css">
+   <title>Bachkaniwala</title>
+</head>
+
+<!-- HTML BODY -->
+
+<body>
+      <!--Header-->
+
+      <header>
+
+        <img src="logo.png" alt="logo" id="logo">
+        <h1>Registration Page</h1>
+
+      </header>
+
+      <!--Navigaion pane-->
+
+      <nav>
+         
+        <a href="index.html"> Home Page </a> <br>
+        <a href="registration.html">Registration Page</a> 
+             
+      </nav>
+      
+      <!--Side panel-->
+
+      <section id="panel">
+
+        <h3>Get 30% off on your First Purchase!!</h3>
+
+      </section>
+    
+      <!--Main-->
+
+      <main>
+        
+          <h3>SIGN UP BELOW</h3>
+
+          <!--Form-->
+
+          <form action="https://httpbin.org/post" method="post" onsubmit="return validation()" name="signup" id="myform">
+                <!--Personal Information-->
+                    <fieldset>
+                        <legend>Personal Information:</legend>
+                        First Name: <input type="text" name="firstname" id="fname" Placeholder="Your First Name" required/> 
+                         Last Name: <input type="text" name="lastname" id="lname" Placeholder="Your Last Name" required/>  <br>  
+                        Email: <input type="email" name="useremail" id="email" placeholder="XX@XX.XX" required/>   
+                        Telephone: <input type="tel" name="phone" id="phone" pattern="^[0-9]{3}[-][0-9]{4}[-][0-9]{4}$" Placeholder="XXX-XXXX-XXXX" title="XXX-XXXX-XXXX" required/><br>
+                    </fieldset>
+                <!--Shipping Adress-->    
+                    <fieldset>
+                            <legend> Shipping Address:</legend>
+                        Street Number: <input type="text" name="streetnumber" pattern="^([0-9]*)$" Placeholder="Street Number" title="only digits allowed" required/>
+                        Street Name: <input type="text" name="streetname" pattern="^([^0-9]*)$" title="cannot contain digits" Placeholder="Street Name" required/><br>
+                        Unit #: <input type="text" name="unit" pattern="^([0-9]*)$" Placeholder="Unit Number" title="only digits allowed" required/>
+                        City: <input type="text" name="city" pattern="^([A-za-z]*)$" Placeholder="City" title="only letters allowed" required/><br>
+                        Province: <select name="provinces">
+                                <option value="ontario" selected>ONTARIO</option>
+                                <option value="quebec"> QUEBEC </option>
+                                <option value="saskatchewan"> SASKATCHEWAN </option>
+                                <option value="british columbia"> BRITISH COLUMBIA</option>
+                                <option value="alberta"> ALBERTA </option>
+                                <option value="manitoba"> MANITOBA</option>
+                                <option value="nova scotia"> NOVA SCOTIA </option>
+                                <option value="new brunswick"> NEW BRUNSWICK </option>
+                                <option value="newfoundland and labrador"> NEWFOUNDLAND AND LABRADOR</option>
+                                <option value="prince edward island"> PRINCE EDWARD ISLAND </option>
+                                <option value="northwest territories"> NORTHWEST TERRITORIES </option>
+                                <option value="nunavut"> NUNAVUT </option>
+                                <option value="yukon"> YUKON </option>
+                            </select>
+                        Zip Code: <input type="text" name="zipcode" pattern="^[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]$" Placeholder="Eg: M1H2N2" title="Letter Digit Letter Digit Letter Digit" required/>
+                    </fieldset>       
+                <!--Log In Details-->
+                  <fieldset>
+                         <legend>Log In Details:</legend>
+                         Username: <input type="text" name="username" pattern="^[A-za-z].{5,}" Placeholder="Your Username" title="Must start with a letter with minimum 6 characters" required/> <br />
+                         Password: <input type="password" name="password" id="pass1" Placeholder="Your Password" required/> <br/>
+                         Confirm Password: <input type="password" name="confirmpassword" id="pass2" Placeholder="Re-enter Password" required/> <br/>
+                </fieldset>
+                <!--Hidden tags, Submit, Reset-->
+                  <input type="hidden" name="lastName" id="lastName" value="Bachkaniwala"/>
+                  <input type="hidden" name="studentId" id="studentId" value="117990176"/>
+                  <input type="submit" value="Submit"/>
+                  <input type="reset" value="Clear">
+                 
+          </form>
+         
+     </main>
+      
+     <!--Footer-->
+
+      <footer>
+        <h2>Thank You For Visiting</h2>
+      </footer>
+   
+</body>
+
+</html>
